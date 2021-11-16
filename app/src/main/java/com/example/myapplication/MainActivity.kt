@@ -2,6 +2,9 @@ package com.example.myapplication
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.os.PersistableBundle
+import android.widget.Button
+import android.widget.Toast
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -9,5 +12,9 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
     }
 
-    // TEST
+    fun btnClick(view: android.view.View) {
+        Toast.makeText(this, "TEST", Toast.LENGTH_SHORT).show()
+    }
+
+
 }
